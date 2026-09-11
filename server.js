@@ -42,9 +42,7 @@ app.get('/api/reels', async (req, res) => {
         // Pexels Public API से फ्री ट्रेंडिंग रील्स
         const response = await fetch('https://api.pexels.com/videos/popular?per_page=15', {
             headers: {
-                'Authorization': '563492ad6f91700001000001234567890abcdef1234567890' // टेस्टिंग की चाबी
-            }
-        });
+                'Authorization': `wGGgb74JA6sRRhrmoOunqmWr77m2OCZoCPYc1zDPuXeX8tqa45MH2QPY
         const data = await response.json();
         
         if (data.videos) {
